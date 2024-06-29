@@ -186,17 +186,27 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <embed id="teaser" src="./static/images/teaser.pdf" alt="Teaser Image" height="100%">
-      <h2 class="subtitle has-text-centered">
+      <embed id="teaser" src="./static/images/teaser.pdf" alt="Teaser Image" width="100%" height="500px">
+      <h2 class="subtitle has-text-centered small-text">
         Traditional frameworks typically separate human and agent training, requiring operators
-first to learn the task environment before data collection. In our framework, we integrate human and agent training from
-the start in a joint learning model, enables simultaneous development and adapts the agents to
-human operation more effectively, enhancing overall efficiency and promoting better collaboration
-between humans and machines allowing for human effortless adaptation data collection.
+        first to learn the task environment before data collection. In our framework, we integrate human and agent training from
+        the start in a joint learning model, enables simultaneous development and adapts the agents to
+        human operation more effectively, enhancing overall efficiency and promoting better collaboration
+        between humans and machines allowing for human effortless adaptation data collection.
       </h2>
     </div>
   </div>
 </section>
+
+<style>
+  .small-text {
+    font-size: 12px; /* Adjust the font size as needed */
+  }
+  #teaser {
+    width: 100%;
+    height: 500px; /* Adjust the height as needed */
+  }
+</style>
 
 <!-- 
 <section class="hero is-light is-small">
@@ -446,15 +456,6 @@ between humans and machines allowing for human effortless adaptation data collec
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
