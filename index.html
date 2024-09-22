@@ -17,6 +17,20 @@
         .icon .fa-bilibili {
             font-size: 0; /* 移除原始图标大小 */
         }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .supply {
+      max-width: 100%;
+      height: auto;
+    }
+    .embed {
+      max-width: 100%;
+      height: auto;
+    }
     </style>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -318,24 +332,21 @@
         </div>
       </div>
     </div>
-    <!--/ Paper video. -->
-  </div>
 
-      <!-- Supply. -->
+    <!-- Supply. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Appendix</h2>
         <section class="hero teaser">
           <div class="container is-max-desktop">
             <div class="supply">
-              <embed id="supply" src="./ICRA_2025_supply.pdf" alt="Appendix" width="400%" height="2000px">
+              <!-- 使用 CSS 类 'embed' 来控制 PDF 的显示 -->
+              <embed id="supply" src="./ICRA_2025_supply.pdf" alt="Appendix" class="embed">
             </div>
           </div>
         </section>
       </div>
     </div>
-    <!--/ Paper video. -->
-  </div>
 </section>
 
 
